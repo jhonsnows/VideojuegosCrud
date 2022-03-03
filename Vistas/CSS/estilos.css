@@ -1,5 +1,7 @@
-@media only screen and (min-width : 901px) {
-    *{
+@media only screen and (min-width : 720px) {
+    *{  
+        align-content: left;
+        text-align: left;
         padding: 5px;
         margin: 2px;
     }
@@ -28,10 +30,11 @@
       background-size: cover;
       display: grid;
       align-items: center;
-      justify-items: center;
+      justify-items: left;
     }
     /*ESTILO DE FORMULARIO DE CREAR*/
     .formulario {
+      align-items: center;
       background: #f8f4e5;
       padding: 22px 30px;
       margin-top: 10px;
@@ -39,27 +42,30 @@
       border: 1px solid black;
       border-radius: 10px;
       box-shadow: 8px 10px 1px #7bdaff, 8px 10px 1px 1px black;
+      height: grid;
+      width: 40%;
     }
     input {
       display: block;
-      font-size: 14pt;
+      font-size: 10pt;
       line-height: 28pt;
       font-family: "Brush Script MT, helvética,arial,courier";
-      margin-bottom: 8pt;
+      margin-bottom: 6pt;
       border: 1px solid black;
       border-radius: 8px;
       border-bottom: 4px solid rgba(0, 0, 0, 0.596);
       background: #f8f4e5;
       min-width: 250px;
-      padding-left: 5px;
+      padding-left: 4px;
       outline: none;
       color: black;
+      text-align: left;
     }
     input:focus {
       border-bottom: 4px solid #367d5d;
     }
-  
     button {
+      
       display: block;
       margin: 0 auto;
       line-height: 28pt;
@@ -84,8 +90,13 @@
       }
     h1{
         color: #367d5d;
+        line-height: normal;
         font-style: arial,courier;
         align-content: center;
+        height: inherit;
+        width: auto;
+        border-width: 6px;
+        border-color: #3ca7ff;
   
     }
     img{
@@ -108,17 +119,21 @@
     #contendor{
       border-style: initial;
       width: 60%;
+      text-align: left;
     }
     #contenedor2{
       border-style: initial;
       
     }
+  
+    
   }
+  /*
     .caja{
             margin:  6px;
             display: table-cell;
             padding: 15px;
-            text-align: center;
+            align-content: center;
             border: #367d5d;
             border-radius:6%;
         }
@@ -151,6 +166,7 @@
             font-weight: 100;
 
         }
+        */
         .pie{
             
             border-radius: 9%;
