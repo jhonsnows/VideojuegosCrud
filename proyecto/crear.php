@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+<?php
+    date_default_timezone_get();
+    $fecha_actual=date("Y-m")
+?>
+
+=======
+>>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +15,10 @@
     <title>Agregar Un Juego</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="estilos2.css" rel="stylesheet">
+<<<<<<< HEAD
+    <
+=======
+>>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
 </head>
 <body aling="center" >
     <div class="container">
@@ -30,7 +42,11 @@
                 <label for="console">Consola</label>
             </div>
             <div class="mb-3">
+<<<<<<< HEAD
+            <input placeholder="Ingrese su año de lanzamiento" name="ryear" VALUE="<?php echo $fecha_actual ?>" type="text" />
+=======
             <input placeholder="Ingrese su año de lanzamiento" name="ryear" type="text" />
+>>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
                 <label for="ryear">Lanzamiento</label>
             </div>
             <div class="mb-3">
@@ -42,11 +58,19 @@
                 <label for="image">IMÁGEN</label>
             </div>
             <div class="mb-3">
+<<<<<<< HEAD
+                <button aling=center type="submit" name="btn_crear" class="">CALCULAR</button>
+            </div>
+          </form>
+         </div>
+        </div>
+=======
                 <button aling=center type="submit" formaction="https://www.youtube.com/watch?v=8F2s8ivKXNY" class="FIXED-BOTTON">CALCULAR</button>
             </div>
           </form>
                     </div>
     </div>
+>>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
     </div>
 </body>
 </html>

@@ -11,10 +11,5 @@
 	// Se verifica si no hay error en la conexión
 	if($link === false){
 	    die("ERROR DE CONEXIÓN " . mysqli_connect_error());
-<<<<<<< HEAD
-	}else{
-		echo"conectado";
-=======
->>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
 	}
 ?>

@@ -1,4 +1,6 @@
 
+<<<<<<< HEAD
+=======
 
 
 
@@ -29,6 +31,7 @@
 
 
 
+>>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +49,19 @@
         <h1>VIDEO-GAMES!</h1>
             <div class="formulario">
                 <DIV class="caja">
+<<<<<<< HEAD
+                    <DIv class="">
+                        <BUtton onclick=""  ><a href="crear.php">CREAR</a>  </BUtton>
+                    </DIv>
+                    <div class="caja">
+                        <BUtton onclick=""> <a href="">LISTAR</a> </BUtton>
+                    </div>
+                    <div class="caja">
+                        <BUtton onclick=""> <a href="">MODIFICAR</a> </BUtton>
+                    </div>
+                    <div class="caja">
+                        <BUtton onclick=""> <a href="">ELIMINAR</a> </BUtton>
+=======
                     <DIv class="caja">
                         <BUtton onclick="" href="crear.php">CREAR</BUtton>
                     </DIv>
@@ -57,6 +73,7 @@
                     </div>
                     <div class="caja">
                         <BUtton onclick="">ELIMINAR</BUtton>
+>>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
                     </div>
         </DIV>
          <div>

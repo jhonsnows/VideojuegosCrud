@@ -21,7 +21,11 @@ body {
         box-shadow: 8px 10px 1px #7bdaff, 8px 10px 1px 1px black;}
         .caja{
             margin:  6px;
+<<<<<<< HEAD
+            display: grid;
+=======
             display: table-cell;
+>>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
             padding: 15px;
             align-content: center;
             border: #367d5d;
@@ -92,4 +96,24 @@ body {
               padding-left: 6%
               
           }
+<<<<<<< HEAD
+          button {
+            display: table-cell;
+            margin:  auto;
+            line-height: 28pt;
+            padding: 0 20px;
+            background: #7bdaff;
+            letter-spacing: auto;
+            transition: 0.2s all ease-in-out;
+            outline: none;
+            border: 1px solid black;
+            box-shadow: 3px 3px 1px #3ca7ff, 3px 3px 1px 1px black;
+          }
+          button:hover {
+            background: #367d5d;
+            color: white;
+            border: 1px solid black;
+          }
+=======
         }
+>>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
