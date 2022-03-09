@@ -21,11 +21,7 @@ body {
         box-shadow: 8px 10px 1px #7bdaff, 8px 10px 1px 1px black;}
         .caja{
             margin:  6px;
-<<<<<<< HEAD
             display: grid;
-=======
-            display: table-cell;
->>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
             padding: 15px;
             align-content: center;
             border: #367d5d;
@@ -96,7 +92,6 @@ body {
               padding-left: 6%
               
           }
-<<<<<<< HEAD
           button {
             display: table-cell;
             margin:  auto;
@@ -114,6 +109,3 @@ body {
             color: white;
             border: 1px solid black;
           }
-=======
-        }
->>>>>>> a99ec893d6a99d91dfd19f0aafd667e316ff7115
