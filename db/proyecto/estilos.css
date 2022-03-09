@@ -1,0 +1,176 @@
+@media only screen and (min-width : 901px) {
+  *{
+    padding: 9px;
+    margin: 0%;
+    display: grid;
+
+  }
+  #body {
+      background-image: url("https://image.freepik.com/vector-gratis/fondo-formas-abstractas-verde-acuarela_23-2149080626.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+  p{
+    background: #f8f4e5;
+      padding: 22px 30px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 8px 10px 1px #7bdaff, 8px 10px 1px 1px black;
+  }
+  body {
+      background-image: url("https://image.freepik.com/vector-gratis/fondo-formas-abstractas-verde-acuarela_23-2149080626.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+    .formulario {
+      
+      width: auto;
+      background: #f8f4e5;
+      padding: 22px 30px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 8px 10px 1px #7bdaff, 8px 10px 1px 1px black;
+    }
+    input {
+      width: 70px;
+      display: grid;
+      font-size: 10pt;
+      line-height: 28pt;
+      font-family: "Brush Script MT, helvética,arial,courier";
+      margin-bottom: 8pt;
+      border: 1px solid black;
+      border-radius: 8px;
+      border-bottom: 4px solid rgba(0, 0, 0, 0.596);
+      background: #f8f4e5;
+      min-width: 250px;
+      padding-left: 5px;
+      outline: none;
+      color: black;
+    }
+    input:focus {
+      border-bottom: 4px solid #367d5d;
+    }
+
+    button {
+      display: table-cell;
+      margin:  auto;
+      line-height: 28pt;
+      padding: 0 20px;
+      background: #7bdaff;
+      letter-spacing: auto;
+      transition: 0.2s all ease-in-out;
+      outline: none;
+      border: 1px solid black;
+      box-shadow: 3px 3px 1px #3ca7ff, 3px 3px 1px 1px black;
+    }
+    button:hover {
+      background: #367d5d;
+      color: white;
+      border: 1px solid black;
+    }
+    h1{
+        color: #367d5d;
+        font-style: arial,courier;
+        align-content: center;
+
+    }
+    img{
+        border-style: 2px, solid;
+        border-radius: 4%;
+        width: 520px;
+    }
+    .copyriht{
+        background-color:#37e937;
+        
+    }
+    #two_columns{
+      border-style: double ;
+      border-radius: 9%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 6%;
+    }
+    #contendor{
+      border-style: initial;
+      width: 60%;
+    }
+    #contenedor2{
+      border-style: initial;
+      
+    }
+    .pie{
+      align-content: left;
+                
+      border-radius: 9%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 6%;
+    }
+    .pie:nth-child(1){
+        
+        border-radius: 9%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 6%
+        
+    }
+  }
+
+/*gidesing*/
+.caja{
+  margin:  6px;
+  display: table-cell;
+  padding: 15px;
+  align-content: center;
+  border: #367d5d;
+  border-radius:6%;
+}
+.caja:nth-child(1){
+  background: cadetblue;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+.caja:nth-child(2){
+  background: cadetblue;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+.caja:nth-child(3){
+  background: cadetblue;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+.caja:nth-child(4){
+  background: cadetblue;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+
+
+.caja1{
+  margin:  6px;
+  display: grid;
+  padding: 15px;
+  align-content: center;
+  border: #367d5d;
+  border-radius:6%;
+  
+  
+}
