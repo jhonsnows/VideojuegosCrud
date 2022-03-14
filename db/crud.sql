@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 07-03-2022 a las 20:31:31
--- Versión del servidor: 10.4.22-MariaDB
--- Versión de PHP: 8.1.2
+-- Servidor: localhost
+-- Tiempo de generación: 14-03-2022 a las 22:51:10
+-- Versión del servidor: 8.0.17
+-- Versión de PHP: 7.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -30,12 +31,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `games` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `descrip` varchar(250) NOT NULL,
+  `genero` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `console` varchar(30) NOT NULL,
-  `ryear` date NOT NULL,
-  `nplayers` int(8) NOT NULL,
-  `image` mediumblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `añolanzamiento` date NOT NULL,
+  `desarrollador` int(8) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Volcado de datos para la tabla `games`
+--
+
+INSERT INTO `games` (`id`, `name`, `genero`, `console`, `añolanzamiento`, `desarrollador`) VALUES
+(2028, 'HALO 4', 'Acción', 'PlayStation', '2022-03-28', 343);
 
 --
 -- Índices para tablas volcadas
@@ -46,6 +53,16 @@ CREATE TABLE `games` (
 --
 ALTER TABLE `games`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `games`
+--
+ALTER TABLE `games`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2029;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
