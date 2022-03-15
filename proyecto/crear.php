@@ -1,10 +1,7 @@
-<?php
-    date_default_timezone_get();
-    $fecha_actual=date("Y-m")
-?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +11,9 @@
     <link href="estilos2.css" rel="stylesheet">
     <
 </head>
-<body aling="center" >
-    <div class="container">
+
+<body class="container">
+
     <div class="container-fluid">
         <div class="input-field">
         <h1>AGREGAR UN JUEGO</h1>
@@ -25,8 +23,21 @@
                 <input placeholder="Ingrese su nombre" name="name" type="text" />
                 <label for="name">Nombre</label>
                 
-            </div>
-            <div class="mb-3">
+                <p>Nombre del Juego:<br><input type="text" name="NombreJuego"></p>
+                <p>Género:<br><select name="Genero">
+                        <option>Acción</option>
+                        <option>Arcade</option>
+                        <option>Deportivo</option>
+                        <option>Estrategia</option>
+                        <option>Simulación</option>
+
+                    </select></p>
+                    <p>Tipo de Consola:<br><select name="TipoConsola">
+                        <option>Xbox</option>
+                        <option>PlayStation</option>
+                        <option>PC</option>
+                    </select></p>
+                <p>Fecha de Lanzamiento:<br><input type="date" name="FechaLanzamiento"></p>
                 
                 <input placeholder="Ingrese su descripción" name="descrip" type="text" />
                 <label for="descrip">Descripción</label>
@@ -58,5 +69,7 @@
          </div>
         </div>
     </div>
+
 </body>
+
 </html>
