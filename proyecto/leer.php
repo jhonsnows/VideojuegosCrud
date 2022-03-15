@@ -66,7 +66,7 @@
                                     <!----eliminar----->
                                     <form action="delete.php" method="post">
                                         <input type="hidden" value="<?php echo $mostrar['id'] ?>" name="id" readonly>
-                                        <input type="submit" value="Eliminar" name="btnEliminar">
+                                        <input type="submit" value="Eliminar">
 
                                     </form>
                                 </td>
