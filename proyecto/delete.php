@@ -2,17 +2,15 @@
 // Creamos la conexión
 
 $servername = "localhost";
-$database = "bancomysavingsweb";
+$database = "crud";
 $username = "root";
 $password = "unad2021";
 
 $conexion = mysqli_connect($servername, $username, $password, $database);
 
 
-$ID=$_POST['doc_ID'];
-mysqli_query($conexion,"DELETE FROM registro_persona where nro_doc='$ID'")or die("Error al eliminar");
+$ID = $_POST['id'];
+mysqli_query($conexion, "DELETE FROM games where id='$ID'") or die("Error al eliminar");
 
 mysqli_close($conexion);
-header("location:admin_home.php");
-
-?>
+header("location:leer.php");

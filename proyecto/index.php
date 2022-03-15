@@ -19,7 +19,7 @@
             <a class="btn btn-primary" href="crear.php">CREAR</a>
             <a class="btn btn-primary" href="leer.php">LEER</a>
             <a class="btn btn-primary" href="leer.php">ACTUALIZAR</a>
-            <a class="btn btn-primary" href="lerr.php">ELMINAR</a>
+            <a class="btn btn-primary" href="leer.php">ELMINAR</a>
 
             <br>
         </div>
