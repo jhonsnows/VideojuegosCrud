@@ -33,7 +33,7 @@
 
             $conexion = mysqli_connect($servername, $username, $password, $database);
 
-            //Tomando datos por ID desde tabla Listar
+            //Tomando datos por ID desde la pagina "leer.php"
 
             if (isset($_GET['id'])) {
 
@@ -45,6 +45,7 @@
 
                 if (mysqli_num_rows($resultado) > 0) {
                     $row = mysqli_fetch_array($resultado);
+                    $id = $row['id'];
                     $genero = $row['genero'];
                     $nombrejuego = $row['name'];
                     $fechalanzamiento = $row['añolanzamiento'];
@@ -55,44 +56,45 @@
             ?>
             <!-- Formulario para actualizar datos -->
 
-     
-                    <h2>Actualización de juego</h2>
-                    <form action="update.php?id=<?php echo $_GET['id']; ?>" method="post">
-                        <p>Nombre del Juego: <br><input type="text" name="NombreJuego" value="<?php echo $nombrejuego; ?>"></p>
 
-                        <p>Género: <br><select name="Genero" value="<?php echo $genero; ?>">
-                                <option>Acción</option>
-                                <option>Arcade</option>
-                                <option>Deportivo</option>
-                                <option>Estrategia</option>
-                                <option>Simulación</option>
+            <h2>Actualización de juego</h2>
+            <form action="update.php?id=<?php echo $_GET['id']; ?>" method="post">
+                <p>ID: <br><input type="text" name="id" value="<?php echo $id; ?>" readonly class="form-control-plaintext"></p>
+                <p>Nombre del Juego: <br><input type="text" name="NombreJuego" value="<?php echo $nombrejuego; ?>"></p>
 
-                            </select></p>
+                <p>Género: <br><select name="Genero" value="<?php echo $genero; ?>">
+                        <option>Acción</option>
+                        <option>Arcade</option>
+                        <option>Deportivo</option>
+                        <option>Estrategia</option>
+                        <option>Simulación</option>
 
-                        <p>Tipo de Consola: <br><select name="TipoConsola" value="<?php echo $tipoconsola; ?>">
-                                <option>Xbox</option>
-                                <option>PlayStation</option>
-                                <option>PC</option>
-                            </select></p>
+                    </select></p>
 
-                        <p>Fecha de Lanzamiento: <br><input type="date" name="FechaLanzamiento" value="<?php echo $fechalanzamiento; ?>"></p>
+                <p>Tipo de Consola: <br><select name="TipoConsola" value="<?php echo $tipoconsola; ?>">
+                        <option>Xbox</option>
+                        <option>PlayStation</option>
+                        <option>PC</option>
+                    </select></p>
 
-                        <p>Desarrollador: <br><input type="text" name="Desarrollador" value="<?php echo $desarrollador; ?>"></p>
-                        <input type="submit" value="Actualizar" name="update">
-                        <a href='javascript:history.go(-1)'>Volver</a>
+                <p>Fecha de Lanzamiento: <br><input type="date" name="FechaLanzamiento" value="<?php echo $fechalanzamiento; ?>"></p>
 
-
-                        <br>
+                <p>Desarrollador: <br><input type="text" name="Desarrollador" value="<?php echo $desarrollador; ?>"></p>
+                <input type="submit" value="Actualizar" name="update">
+                <a href='javascript:history.go(-1)'>Volver</a>
 
 
-                    </form>
+                <br>
+
+
+            </form>
 
 
             <?php
             //Nuevos datos tomados desde el formulario anterior
 
             if (isset($_POST['update'])) {
-
+                $id = $_POST['id'];
                 $genero = $_POST['Genero'];
                 $nombrejuego = $_POST['NombreJuego'];
                 $fechalanzamiento = $_POST['FechaLanzamiento'];
@@ -102,7 +104,7 @@
                 //Nuevos valores a actualizar en la BD
 
                 $sql = "UPDATE games SET name = '$nombrejuego', genero = '$genero',
-    console = '$tipoconsola', añolanzamiento = '$fechalanzamiento', desarrollador = '$desarrollador'";
+    console = '$tipoconsola', añolanzamiento = '$fechalanzamiento', desarrollador = '$desarrollador' WHERE id = '$id'";
 
 
                 mysqli_query($conexion, $sql);
