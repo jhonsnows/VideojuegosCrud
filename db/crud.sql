@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 14-03-2022 a las 22:51:10
+-- Tiempo de generación: 16-03-2022 a las 16:46:47
 -- Versión del servidor: 8.0.17
 -- Versión de PHP: 7.3.10
 
@@ -34,7 +34,7 @@ CREATE TABLE `games` (
   `genero` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `console` varchar(30) NOT NULL,
   `añolanzamiento` date NOT NULL,
-  `desarrollador` int(8) NOT NULL
+  `desarrollador` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -42,7 +42,9 @@ CREATE TABLE `games` (
 --
 
 INSERT INTO `games` (`id`, `name`, `genero`, `console`, `añolanzamiento`, `desarrollador`) VALUES
-(2028, 'HALO 4', 'Acción', 'PlayStation', '2022-03-28', 343);
+(2028, 'FIFA 22', 'Deportivo', 'Xbox', '2022-01-11', 'EA'),
+(2032, 'WarThunder', 'Simulación', 'PC', '2022-01-11', 'Gaijin'),
+(2033, 'Call of Duty', 'Acción', 'Xbox', '2021-12-08', 'Activision');
 
 --
 -- Índices para tablas volcadas
@@ -62,7 +64,7 @@ ALTER TABLE `games`
 -- AUTO_INCREMENT de la tabla `games`
 --
 ALTER TABLE `games`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2029;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2034;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
