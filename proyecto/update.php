@@ -18,7 +18,9 @@
 <body class="container">
     <div class="container-fluid" aling="center">
         <div class="formulario">
-
+            <a class="btn btn-primary" href="index.php">INICIO</a>
+            <a class="btn btn-primary" href="crear.php">CREAR</a>
+            <a class="btn btn-primary" href="leer.php">LEER</a>
 
 
             <!-- Inicia codigo actualizar cliente-->
@@ -80,8 +82,8 @@
                 <p>Fecha de Lanzamiento: <br><input type="date" name="FechaLanzamiento" value="<?php echo $fechalanzamiento; ?>"></p>
 
                 <p>Desarrollador: <br><input type="text" name="Desarrollador" value="<?php echo $desarrollador; ?>"></p>
-                <input type="submit" value="Actualizar" name="update">
-                <a href='javascript:history.go(-1)'>Volver</a>
+                <input type="submit" value="Actualizar" name="update" class="btn btn-success">
+                <a class="btn btn-dark" href='javascript:history.go(-1)'>Volver</a>
 
 
                 <br>

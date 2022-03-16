@@ -35,7 +35,7 @@
                                                         echo $_GET['id'];
                                                     } ?>">
 
-                <input type="submit" value="Buscar">
+                <input class="btn btn-dark" type="submit" value="Buscar">
 
             </form>
 
