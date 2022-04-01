@@ -16,6 +16,9 @@
     <div class="container-fluid" aling="center">
         <h1>CRUD: Video Juegos!</h1>
         <div class="formulario">
+
+            <!-- Menú de navegación-->
+
             <a class="btn btn-primary" href="crear.php">CREAR</a>
             <a class="btn btn-primary" href="leer.php">LEER</a>
             <a class="btn btn-primary" href="leer.php">ACTUALIZAR</a>
@@ -25,10 +28,13 @@
         </div>
         <div class="formulario">
 
-        <!-- Inicia searchbox juego por ID-->
+            <!-- Inicia caja de búsqueda para encontrar juegos escribiendo el ID del juego especifico-->
 
-        <h4>Buscar Videouego por ID</h4>
+            <h4>Buscar Videouego por ID</h4>
             <p><i>Id de prueba: 2028</i></p>
+
+            <!-- Se envia por el metodo GET un value id que sera leído y comprobado mas adelante-->
+
             <form action="" method="GET">
 
                 <input type="text" name="id" value="<?php if (isset($_GET['id'])) {
@@ -40,17 +46,21 @@
             </form>
 
             <hr>
-            
+
             <?php
+            //Conectamos a la base de datos
             $con = mysqli_connect("localhost", "root", "unad2021", "crud");
 
+            //Comprobamos si la variable ID obtenida en el formulario de búsqueda es igual al valor id en la tabla "games" en la base de datos
             if (isset($_GET['id'])) {
                 $id = $_GET['id'];
+
+                //Se hace la consulta a la base de datos
 
                 $query = "SELECT * FROM games WHERE id='$id' ";
                 $query_run = mysqli_query($con, $query);
 
-                // Motrar la consulta en una tabla
+                // Se muestra la consulta en una tabla
 
                 echo "<table>";
                 echo "<thead>";
@@ -64,10 +74,11 @@
                 echo "</tr>";
                 echo "</thead>";
 
-                // Bucle while que recorre cada registro y muestra cada campo en la tabla.
+                // Este Bucle while recorre cada registro en la base de datos donde la varible "id" coincida. Se muestra cada campo en la tabla.
                 while ($col = mysqli_fetch_array($query_run)) {
                     echo "<tbody>";
                     echo "<tr>";
+                    //El array obtiene cada columna de la tabla con cada valor que coincida con el id buscado por el usuario.
                     echo "<td>" . $col['id'] . "</td><td>" . $col['name'] . "</td><td>" . $col['genero'] . "</td><td>" . $col['console']  . "</td><td>" . $col['añolanzamiento'] . "</td><td>" . $col['desarrollador'] . "</td>";
                     echo "</tr>";
                     echo "</tbody>";

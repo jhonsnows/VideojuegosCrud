@@ -14,8 +14,8 @@ if (!$conexion) {
 }
 echo "Conexión satisfactoria a la BD";
 
-// Tomando valores desde el formulario
-
+// Tomando valores enviados desde el formulario "crear.php"
+//Se asigna una variable para cada valor que será insertado en la base de datos
 $genero = $_REQUEST['Genero'];
 $nombrejuego = $_REQUEST['NombreJuego'];
 $fechalanzamiento = $_REQUEST['FechaLanzamiento'];

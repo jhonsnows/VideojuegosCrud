@@ -14,12 +14,17 @@
 
     <div class="container-fluid">
         <div class="formulario">
+            <!-- Menú de navegación-->
             <a class="btn btn-primary" href="index.php">INICIO</a>
             <a class="btn btn-primary" href="leer.php">LEER</a>
             <a class="btn btn-primary" href="leer.php">ACTUALIZAR</a>
             <a class="btn btn-primary" href="leer.php">ELMINAR</a>
 
             <h1>AGREGAR UN JUEGO</h1>
+            <!-- Formulario para agregar un juego a la base de datos-->
+            <!-- La información se envia mediante el método post a la página "guardar_en_bd.php", desde donde se escriben los valores en la base de datos-->
+            <!-- Los campos "required" en el formulario, indican que es obligatorio completar dicha sección -->
+
             <form action="guardar_en_bd.php" method="post">
                 <p>Nombre del Juego:<br><input type="text" name="NombreJuego" required></p>
                 <p>Género:<br><select name="Genero" required>
