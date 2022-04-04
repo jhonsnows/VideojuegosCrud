@@ -95,8 +95,8 @@
         </div>
         <footer class="pie">
             <div class="pie">
-                <h4>GRUPO 5415646_xX</h4>
-                <h5>Auto Text es una forma de almacenar partes de un documento de Word que está disponible para su uso en cualquier documento. En otras palabras, con las entradas de Texto automático que ha almacenado, no necesita escribir el mismo contenido una y otra vez. Pero, ¿cómo podemos usar las entradas de Auto Text rápidamente? Kutools for Word, Panel de Autotexto puede guardar, listar e insertar entradas de autotexto fácilmente en el documento.</h5>
+                <h4>GRUPO 204027_4</h4>
+                <h5>JUAN DAVID NIEVES GAINDO <BR> DIEGO ANDRÉS CASTILLA <BR> <A href="https://github.com/jhonsnows/VideojuegosCrud">Link</A></h5>
             </div>
         </footer>
     </div>
