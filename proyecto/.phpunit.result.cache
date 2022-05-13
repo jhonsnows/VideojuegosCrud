@@ -1,0 +1,1 @@
+{"version":1,"defects":{"CreateTest::probar_funcion_CREATE_verificar_que_los_datos_ingresados_del_videojuego_son_correctos":4,"CreateTest::probar_datos_ingresados_del_videojuego":5},"times":{"CreateTest::probar_funcion_CREATE_verificar_que_los_datos_ingresados_del_videojuego_son_correctos":0.029,"CreateTest::probar_datos_ingresados_del_videojuego":0.013}}
